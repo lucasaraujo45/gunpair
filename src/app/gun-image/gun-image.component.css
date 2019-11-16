@@ -1,0 +1,12 @@
+.image-container {
+    background: transparent url("/assets/images/ruler.png") no-repeat top right;
+    position: relative;
+    width: 58rem;
+    height: 30rem;
+}
+
+img {
+    position: absolute;
+    top: 0.7rem;
+    right: 0.7rem;
+}

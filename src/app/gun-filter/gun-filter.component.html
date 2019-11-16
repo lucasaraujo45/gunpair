@@ -1,0 +1,124 @@
+<h4>Select Your Gun</h4>
+<mat-accordion>
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        CZ
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <mat-selection-list (selectionChange)="toggleGunImage($event)">
+      <mat-list-option [value]="czGun" *ngFor="let czGun of czArray">
+        <label>{{czGun.label}}</label>
+      </mat-list-option>
+    </mat-selection-list>
+  </mat-expansion-panel>
+
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Glock
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <mat-selection-list (selectionChange)="toggleGunImage($event)">
+      <mat-list-option [value]="glockGun" *ngFor="let glockGun of glockArray">
+        <label>{{glockGun.label}}</label>
+      </mat-list-option>
+    </mat-selection-list>
+  </mat-expansion-panel>
+
+
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Heckler & Koch
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <mat-selection-list (selectionChange)="toggleGunImage($event)">
+      <mat-list-option [value]="hecklerGun" *ngFor="let hecklerGun of hecklerArray">
+        <label>{{hecklerGun.label}}</label>
+      </mat-list-option>
+    </mat-selection-list>
+  </mat-expansion-panel>
+
+
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Kahr
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <mat-selection-list (selectionChange)="toggleGunImage($event)">
+      <mat-list-option [value]="kahrGun" *ngFor="let kahrGun of kahrArray">
+        <label>{{kahrGun.label}}</label>
+      </mat-list-option>
+    </mat-selection-list>
+  </mat-expansion-panel>
+
+
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Ruger
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <mat-selection-list (selectionChange)="toggleGunImage($event)">
+      <mat-list-option [value]="rugerGun" *ngFor="let rugerGun of rugerArray">
+        <label>{{rugerGun.label}}</label>
+      </mat-list-option>
+    </mat-selection-list>
+  </mat-expansion-panel>
+
+
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Sig Sauer
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <mat-selection-list (selectionChange)="toggleGunImage($event)">
+      <mat-list-option [value]="sigGun" *ngFor="let sigGun of sigArray">
+        <label>{{sigGun.label}}</label>
+      </mat-list-option>
+    </mat-selection-list>
+  </mat-expansion-panel>
+
+
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Sig Sauer
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <mat-selection-list (selectionChange)="toggleGunImage($event)">
+      <mat-list-option [value]="springfieldGun" *ngFor="let springfieldGun of springfieldArray">
+        <label>{{springfieldGun.label}}</label>
+      </mat-list-option>
+    </mat-selection-list>
+  </mat-expansion-panel>
+
+
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Smith & Wesson
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <mat-selection-list (selectionChange)="toggleGunImage($event)">
+      <mat-list-option [value]="smithGun" *ngFor="let smithGun of smithArray">
+        <label>{{smithGun.label}}</label>
+      </mat-list-option>
+    </mat-selection-list>
+  </mat-expansion-panel>
+
+
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Walther
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <mat-selection-list (selectionChange)="toggleGunImage($event)">
+      <mat-list-option [value]="waltherGun" *ngFor="let waltherGun of waltherArray">
+        <label>{{waltherGun.label}}</label>
+      </mat-list-option>
+    </mat-selection-list>
