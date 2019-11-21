@@ -10,6 +10,7 @@ import { CommService } from '../comm.service';
 export class GunImageComponent implements OnInit {
   imageSrc='/assets/images/loading.gif';
   
+  rulerImg = "/assets/images/ruler.png"
   gunArray = [];
   constructor(private commService: CommService) {
     this.commService.gunInfo.subscribe(msg=>{
@@ -25,6 +26,10 @@ export class GunImageComponent implements OnInit {
 
           console.log(this.gunArray);
         }
+    })
+    this.commService.gunType.subscribe(msg => {
+      let message: any = msg;
+      this.rulerImg = message.rulerSrc;
     })
    }
 

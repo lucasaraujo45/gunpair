@@ -1,7 +1,19 @@
 @import '@angular/material/prebuilt-themes/deeppurple-amber.css';
 
-html, body { height: 100%; }
+html, body { height: 100%;}
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+* {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: -moz-none;
+    -o-user-select: none;
+    user-select: none;
+}
+.mat-select-trigger{
+	width: 300px;
+	float:right;
+}
 
 /*                  HEADER            */
 .header{
@@ -13,11 +25,11 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 }
 
 .header-fixed {
-	background-color:#292c2f;
+	background-color:white;
 	box-shadow:0 1px 1px #ccc;
 	padding: 20px 40px;
 	height: 80px;
-	color: #ffffff;
+	color: black;
 	box-sizing: border-box;
 	top:-100px;
 
@@ -55,7 +67,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 /* The navigation links */
 
 .header-fixed .header-limiter a {
-	color: #ffffff;
+	color: black;
 	text-decoration: none;
 }
 
@@ -69,7 +81,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 	display: inline-block;
 	padding: 0 5px;
 	text-decoration:none;
-	color: #ffffff;
+	color: black;
 	opacity: 0.9;
 }
 

@@ -1,0 +1,9 @@
+.row{
+    margin: auto;
+    margin-left:30px;
+}
+
+.sidebar-wrapper {
+    overflow-y: scroll;
+    height: 45rem;
+}

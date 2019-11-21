@@ -86,7 +86,7 @@
   <mat-expansion-panel>
     <mat-expansion-panel-header>
       <mat-panel-title>
-        Sig Sauer
+        Springfield
       </mat-panel-title>
     </mat-expansion-panel-header>
     <mat-selection-list (selectionChange)="toggleGunImage($event)">
@@ -122,3 +122,19 @@
         <label>{{waltherGun.label}}</label>
       </mat-list-option>
     </mat-selection-list>
+  </mat-expansion-panel>
+
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Misc
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      <mat-selection-list (selectionChange)="toggleGunImage($event)">
+        <mat-list-option [value]="miscGun" *ngFor="let miscGun of miscArray">
+          <label>{{miscGun.label}}</label>
+        </mat-list-option>
+      </mat-selection-list>
+    </mat-expansion-panel>
+  </mat-accordion>
+  

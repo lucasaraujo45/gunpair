@@ -1,18 +1,22 @@
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
 <header class="header-fixed">
 
-        <div class="header-limiter">
-    
-            <h1><a href="#">Gun<span>pair</span></a></h1>
-    
-            <nav>
-                <a href="#" class="selected">Handguns</a>
-                <a href="#">Shotguns</a>
-                <a href="#">Assault Rifles</a>
-                <a href="#">Sniper Rifles</a>
-                <a href="#">SMG</a>
-                <a href="#">About</a>
-            </nav>
-    
-        </div>
-    
-    </header>
+  <div class="header-limiter">
+
+    <h1><a href="#">Gun<span>pair</span></a></h1>
+
+  
+            <mat-label class="guntype">Gun Type</mat-label>
+            <mat-select (selectionChange) = "changeRuler($event)">
+              <mat-option *ngFor="let gun of gunTypeArray" [value]="gun.rulerSrc">
+                {{gun.label}}
+              </mat-option>
+            </mat-select>
+  
+
+
+  </div>
+
+</header>

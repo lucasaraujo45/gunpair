@@ -8,4 +8,5 @@ export class CommService {
 
   constructor() { }
   gunInfo = new Subject();
+  gunType = new Subject();
 }

@@ -1,3 +1,5 @@
-<div class="image-container">
+<!-- <div id="sticky"> -->
+<div class="image-container" [ngStyle]="{'background': 'transparent url(' + rulerImg + ') no-repeat top right'}">
     <img *ngFor="let gun of gunArray" [src]="gun.imgSrc" [ngStyle]="{'z-index': gun.zindex}">
 </div>
+<!-- </div> -->
